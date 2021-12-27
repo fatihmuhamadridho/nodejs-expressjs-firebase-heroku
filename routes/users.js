@@ -5,5 +5,6 @@ const userController = require('../controllers/users');
 
 router.route('/users')
     .get(userController.index)
+    .post(userController.store)
 
 module.exports = router
